@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 2
+  domain: mybluemix.net
+  name: Votechain
+  host: votechainHost
+  disk_quota: 1024M
+  services:
+  - Votechain-AdvancedMobileAccess
+  - Votechain-imfpush
+  - Votechain-cloudantNoSQLDB
